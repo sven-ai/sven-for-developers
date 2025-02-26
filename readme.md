@@ -57,7 +57,7 @@ Clone this gh repo & 1-Click install in Terminal:
 ./install.sh
 ```
 
-You need to set `ANTHROPIC_API_KEY` ENV var on your system. Sven is currently using Anthropic (great for coding). It uses `sonnet-3.7-latest` for dev asks and `haiku-3.5-latest` for casual chatting.
+You need to set `ANTHROPIC_API_KEY` ENV var on your system. Sven is currently using Anthropic because it is great for coding. It uses `sonnet-3.7-latest` for dev asks and `haiku-3.5-latest` for casual chatting.
 
 
 # Note: Your first query will be slow
