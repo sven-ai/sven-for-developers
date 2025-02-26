@@ -46,8 +46,6 @@ docker run -d --restart=unless-stopped \
 	# -v $PWD:/sven \
 	# --name=sven-llm-api python:3.13 ./llm-api.start.in-docker.sh
 
-# https://github.com/sven-ai/sven-for-developers/raw/branch/path/to/file 
-
 
 #
 # Open WebUI

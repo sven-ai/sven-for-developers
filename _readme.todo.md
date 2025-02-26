@@ -2,10 +2,9 @@
 
 WIP
 
-# Anthropic's citations
-Knowledge is sent to Anthropic via their `citations` feature:
-https://docs.anthropic.com/en/docs/build-with-claude/citations#response-structure
-
+# litellm
+Can I hook RAG into litellm?
+https://github.com/BerriAI/litellm
 
 # Why?
 Significantly less hallucinations.
