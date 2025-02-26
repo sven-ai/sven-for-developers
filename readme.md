@@ -141,7 +141,7 @@ In case you may need to backup things.
 Sven-llm-api also exposes ollama http API interface.
 This is a minimal implementation that supports listing models and doing chat completions only.
 Yet it is sufficient for some clients.
-I use it with [Enchanted](https://apps.apple.com/app/id6474268307) app - it is great for bringing text from other apps (Safari) to LLM via system-wide keyboard hotkeys - they call it [Completions](https://svenai.com/mighty-workflows-with-less-known-ai-tools/).
+I use it with Enchanted mac app [AppStore](https://apps.apple.com/app/id6474268307), [Source Code](https://github.com/gluonfield/enchanted) - it is great for bringing text from other apps (Safari) to LLM via system-wide keyboard hotkeys - they call it [Completions](https://svenai.com/mighty-workflows-with-less-known-ai-tools/).
 
 OLLama endpoint: [http://localhost:12345](http://localhost:12345)
 NOTE: no `/v2` suffix.
