@@ -31,6 +31,7 @@ Ideas with sven is to have a transparent RAG with central knowledge base. So tha
 # Alternatives
 The closest I ever found was
 extensible
+https://github.com/codelion/optillm
 proxy lib I found but could not use becuase it messes up chats history.
 It takes all chat turns and zips into 1 user-assistant pair. This was a no go (instead of having LLM do actual work, it now wastes resources on keeping track where is user and where is an assistant in a one-turn conversation step).
 

@@ -109,6 +109,23 @@ Then when you do `/chat/completions` with `local` or `local/dev` model - the kno
 By default `local` forwards requests to `Haiku` and `local/dev` to `Sonnet`.
 
 
+# Anthropic's Citations
+Related knowledge is sent to Anthropic via their [Citations feature](https://docs.anthropic.com/en/docs/build-with-claude/citations).
+For Mistral (or other openAI Provider APIs) knowledge is directly attached to conversations after user's text like so:
+```
+<user text>
+
+Knowledge available to you:
+=====
+Up-to-date info:
+-----
+<found knowledge 1>
+Up-to-date info:
+-----
+<found knowledge 2>
+```
+
+
 # LLM Tools
 This is WIP. Sven proxy currently does not forward `tools` to Anthropic.
 
