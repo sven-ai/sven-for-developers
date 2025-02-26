@@ -8,6 +8,7 @@ openAI API proxy on localhost that implements RAG and forwards enriched LLM chat
 3. Verify it works with [http://localhost:3000](http://localhost:3000)
 4. Point your LLM tools to endpoint: [http://localhost:12345/v2](http://localhost:12345/v2)
 
+All used components are open source.
 
 # Who is this for?
 Software developers & individuals who use LLMs for coding (and other tasks).
