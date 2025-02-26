@@ -3,7 +3,7 @@
 # What is this?
 openAI API proxy on localhost that implements RAG and forwards enriched LLM chat completions to Anthropic.
 
-1. Install this
+1. Install this on your laptop
 2. Add knowledge with [https://testflight.apple.com/join/JQmCe33j](https://testflight.apple.com/join/JQmCe33j)
 3. Verify it works with [http://localhost:3000](http://localhost:3000)
 4. Point your LLM tools to endpoint: [http://localhost:12345/v2](http://localhost:12345/v2)
