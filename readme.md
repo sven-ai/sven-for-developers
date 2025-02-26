@@ -49,7 +49,7 @@ But, a gigantic Sonnet + the right data (e.g. conventions about your project's s
 
 
 # Installation
-Installation is via Docker.
+Installation requires Docker.
 Tested on Mac & Linux.
 
 Clone this gh repo & 1-Click install in Terminal:
