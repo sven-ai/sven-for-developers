@@ -16,6 +16,8 @@ docker network create sven;
 #
 # ChromaDB
 #
+# docker network connect sven chromadb
+
 # docker volume create chromadb-data;
 ChromaDataFolder="$HOME/sven/chromadb-data"
 mkdir -p "$ChromaDataFolder"
@@ -24,7 +26,7 @@ docker run -d --restart=unless-stopped \
 	--network=sven --hostname=chromadb \
 	-v $ChromaDataFolder:/data \
 	-e ANONYMIZED_TELEMETRY=False \
-	--name="chromadb" chromadb/chroma
+	--name=chromadb chromadb/chroma
 
 	# -v chromadb-data:/data \
 
@@ -32,6 +34,8 @@ docker run -d --restart=unless-stopped \
 #
 # sven-llm-api service
 #
+# docker network connect sven sven-llm-api
+
 # docker volume create sven-llm-api-data;
 LLMApiDataFolder="$HOME/sven/llm-api-data"
 mkdir -p "$LLMApiDataFolder"
@@ -50,6 +54,8 @@ docker run -d --restart=unless-stopped \
 #
 # Open WebUI
 #
+# docker network connect sven open-webui
+
 # docker volume create owui-data;
 OWUIDataFolder="$HOME/sven/owui-data"
 mkdir -p "$OWUIDataFolder"
