@@ -10,6 +10,22 @@ if [ -z "$ANTHROPIC_API_KEY" ]; then
 fi
 
 
+# Check & Abort script if a docker container with the given name is already running.
+check_container_exists() {
+    local container_name=$1
+    
+    if docker ps --format '{{.Names}}' | grep -q "^${container_name}$"; then
+        echo "WARNING: A Docker container named '${container_name}' is already running."
+        echo "Please run ./cleanup.sh first and then ./install.sh again."
+        exit 1
+    fi
+}
+
+check_container_exists "chromadb"
+check_container_exists "sven-llm-api"
+check_container_exists "open-webui"
+
+
 docker network create sven;
 
 
@@ -69,3 +85,5 @@ docker run -d --restart=unless-stopped \
 	# -v owui-data:/app/backend/data \
 
 
+
+docker logs -ft -n 1000 sven-llm-api
