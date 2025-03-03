@@ -67,6 +67,9 @@ or
 export PATH="$PATH:$HOME/.docker/bin"
 ```
 
+Use `./cleanup.sh` to delete containers if you need to delete Sven-for-developers.
+Additionally delete knowledge db and chat history files in `~/sven`.
+
 
 # Note: Your first query will be slow
 Sven needs to download 2 models (~1GB).
