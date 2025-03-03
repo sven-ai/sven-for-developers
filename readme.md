@@ -58,6 +58,14 @@ Clone this gh repo & 1-Click install in Terminal:
 ```
 
 You need to set `ANTHROPIC_API_KEY` ENV var on your system. Sven is currently using Anthropic because it is great for coding. It uses `sonnet-3.7-latest` for dev asks and `haiku-3.5-latest` for casual chatting.
+If you get `docker not found` error on Mac then you may need:
+```bash
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+```
+or
+```bash
+export PATH="$PATH:$HOME/.docker/bin"
+```
 
 
 # Note: Your first query will be slow
